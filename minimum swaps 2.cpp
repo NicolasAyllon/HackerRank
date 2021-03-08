@@ -4,6 +4,8 @@ using namespace std;
 
 vector<string> split_string(string);
 
+// Solution
+// Given an unordered array containing integers 1 to n, return the minimum number of swaps required to sort the array {1, 2, 3, ..., n}
 int minimumSwaps(vector<int> arr) {
     int swaps = 0;
     int i = 0;
@@ -31,6 +33,9 @@ int minimumSwaps(vector<int> arr) {
     return swaps;
 }
 
+
+
+// From HackerRank
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
