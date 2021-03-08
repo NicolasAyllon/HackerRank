@@ -7,8 +7,9 @@ vector<string> split_string(string);
 // Solution
 long arrayManipulation(int n, vector<vector<int>> queries) {
     long int* differentials = new long int[n+1]();
-    // Initiaize array of size n to all 0s
-    // This array will hold the finite differences of actual array
+    // Create array of size n+1 of all 0s
+    // with unused 0th element to follow 1-based indices in question
+    // This array will hold the finite differences of the actual array (arr)
     // differentials[i] = arr[i] - arr[i-1] (where differentials[0] =  is undefined)
     long int firstIndex = 0;
     long int lastIndex = 0;
