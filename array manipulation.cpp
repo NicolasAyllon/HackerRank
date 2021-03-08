@@ -4,8 +4,7 @@ using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the arrayManipulation function below.
-// NEW APPROACH USING FINITE DIFFERENCES (Discrete Derivative)
+// Solution
 long arrayManipulation(int n, vector<vector<int>> queries) {
     long int* differentials = new long int[n+1]();
     // Initiaize array of size n to all 0s
