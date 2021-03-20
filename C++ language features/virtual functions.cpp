@@ -54,7 +54,7 @@ class Professor : public Person {
 // Must initialize static member variables outside of class
 int Professor::id = 0;
 
-
+// Student is derived from Person
 class Student : public Person {
     private:
         int marks[6];
