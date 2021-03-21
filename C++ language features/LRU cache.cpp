@@ -8,6 +8,7 @@
 using namespace std;
 
 // From HackerRank
+// Doubly linked list (not STL)
 struct Node{
    Node* next;
    Node* prev;
@@ -31,7 +32,7 @@ class Cache{
 
 
 // Solution
-// Extend Cache to LRU (least recently used) Cache
+// Extend Cache to LRUCache (least recently used) 
 class LRUCache : public Cache {
     protected:
         // Helping method to move a node with key to front of the list
