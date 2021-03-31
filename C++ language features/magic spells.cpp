@@ -108,13 +108,13 @@ void counterspell(Spell *spell) {
             for(int j = 1; j <= b; ++j) {
                 // convert 1-based index to 0-based for strings
                 if(journal[i-1] == spellName[j-1]) {
-                    // fill table with table entry for subproblem
-                    // with last character removed + 1
+                    // fill cell with answer for subproblem
+                    // with last characters of both strings removed + 1
                     dp_table[i][j] = 1 + dp_table[i-1][j-1];
                 }
                 else {
-                    // fill table with max of subproblem
-                    // from removing a character from either journal or spellName
+                    // fill cell with max answer for subproblems
+                    // from removing a character from the end of either string
                     dp_table[i][j] = max(dp_table[i-1][j], dp_table[i][j-1]);
                 }
             }
