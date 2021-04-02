@@ -4,7 +4,10 @@
 
 using namespace std;
 
-// Solution
+// Solution:
+// Message objects contain text and an ID for tracking order of creation
+// This allows the recipient to receive the messages out of order, 
+// but sort them back into the order in which they were created/sent.
 class Message {
 public: 
     // Default Constructor
@@ -44,7 +47,8 @@ inline bool operator> (const Message& a, const Message& b) { return operator<(b,
 inline bool operator>=(const Message& a, const Message& b) { return !operator<(a, b); }
 inline bool operator<=(const Message& a, const Message& b) { return !operator>(a, b); }
 
-// Creates messages
+// Solution:
+// MessageFactory used below to create Message objects
 class MessageFactory {
 public:
     MessageFactory() {}
@@ -54,6 +58,10 @@ public:
     }
 };
 
+
+
+
+// From HackerRank
 class Recipient {
 public:
     Recipient() {}
@@ -84,8 +92,6 @@ public:
         }
     }
 };
-
-
 
 int main() {
     MessageFactory message_factory;
