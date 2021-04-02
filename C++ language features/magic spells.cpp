@@ -119,6 +119,7 @@ void counterspell(Spell *spell) {
                 }
             }
         }
+        // answer to overall problem is at the bottom right cell
         int lcs_length = dp_table[a][b];
         cout << lcs_length << '\n';
     }
