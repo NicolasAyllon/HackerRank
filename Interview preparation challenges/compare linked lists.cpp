@@ -1,6 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
+// Solution
+// Given two linked lists, return whether they have the same data
 bool compare_lists(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2) {
     // If identical head pointers are passed in, the lists must be the same
     if(head1 == head2)                       return true;
