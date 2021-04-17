@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 SinglyLinkedListNode* insertNodeAtTail(SinglyLinkedListNode* head, int data) {
     // Empty list: set head to point at new node
     if(head == nullptr) {
