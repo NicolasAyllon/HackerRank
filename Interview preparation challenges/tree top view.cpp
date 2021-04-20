@@ -38,7 +38,7 @@ void topView(Node * root) {
             min = pos;
         }
         // If node's position if furthest right seen so far
-        // push to back of deque and upodate max
+        // push to back of deque and update max
         else if(pos > max) {
             d.push_back(current_node);
             max = pos;
