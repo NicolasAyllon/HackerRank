@@ -11,7 +11,7 @@ void topView(Node * root) {
     queue<pair<Node*, int>> q;
     pair<Node*, int> p(root, 0);
     q.push(p);
-    // Position starts at 0
+    // Position of root is 0
     // Position decreases by 1 following an edge to left child
     // Position increases by 1 following an edge to right child
     
