@@ -1,6 +1,6 @@
-#include<queue>
+#include <queue>
+using namespace std;
 
-using std
 // Solution:
 // Print each node's data using level order traversal
 void levelOrder(Node * root) {
