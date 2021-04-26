@@ -12,9 +12,9 @@ void swapNodesAtMultiplesOfDepth(vector<vector<int>>& tree, int k, int currentIn
 
 // Overall Function
 // ****************
-// The tree, indexes, is vector<vector<int>> where indexes[i] (a vector<int>) 
-// contains 1-based index of left child, indexes[i][0] 
-// and 1-based index of right child, indexes[i][1]
+// The tree, indexes, is a vector<vector<int>> where indexes[i] (a vector<int>) 
+// contains the 1-based index of left child, indexes[i][0] 
+// and the 1-based index of right child, indexes[i][1]
 // Note: nodes of the tree, indexes, hold no data
 vector<vector<int>> swapNodes(vector<vector<int>> indexes, vector<int> queries) {
     vector<vector<int>> results;
@@ -22,7 +22,7 @@ vector<vector<int>> swapNodes(vector<vector<int>> indexes, vector<int> queries) 
         // Swap left and right child of nodes 
         // at depths a multiple of k (k, 2k, 3k, ...)
         swapNodesAtMultiplesOfDepth(indexes, k);
-        // stores an inorder traversal vector in results at each step
+        // Stores an inorder traversal vector in results at each step
         storeInOrderTraversal(indexes, results);
     }
     return results;
