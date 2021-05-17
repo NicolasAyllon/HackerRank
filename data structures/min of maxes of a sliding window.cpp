@@ -1,4 +1,5 @@
 #include <deque>
+#include <vector>
 using namespace std;
 
 // Solution:
