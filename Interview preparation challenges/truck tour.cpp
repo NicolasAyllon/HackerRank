@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <vector>
 
 using namespace std;
 // There are N petrol stations (0,1,2,...,N-1) in arranged in circle. 
