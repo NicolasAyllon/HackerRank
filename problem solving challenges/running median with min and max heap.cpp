@@ -13,6 +13,7 @@ float calculateMedian(vector<int>& lower, vector<int>& upper);
 // Problem:
 // Given a vector of ints, a, return a vector of running medians
 // as values from the vector are added to a set.
+//
 // Solution:
 // To find the running median as elements come in from a vector
 // Use 2 heaps, a max heap for values below the median
