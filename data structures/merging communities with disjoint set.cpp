@@ -83,6 +83,7 @@ int main() {
                 break;
             default:
                 std::cout << "Error: unknown query type " << query_type << '\n';
+                break;
         }
     }
     return 0;
